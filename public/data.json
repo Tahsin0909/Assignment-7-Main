@@ -1,0 +1,99 @@
+[
+    {
+      "id": 1001,
+      "course": "Web Development Fundamentals",
+      "description": "Learn the basics of web development, including HTML, CSS, and JavaScript. Build and style web pages, and create interactive web applications.",
+      "creditHours": 3,
+      "price": 299,
+      "banner": "https://www.creativeitinstitute.com/images/course/course_1663052056.jpg"
+    },
+    {
+      "id": 1002,
+      "course": "Introduction to Python Programming",
+      "description": "Get started with Python programming. Cover basic syntax, data types, control structures, and simple projects. Perfect for beginners.",
+      "creditHours": 4,
+      "price": 349,
+      "banner": "https://i0.wp.com/moodle.sit.ac.in/blog/wp-content/uploads/2023/03/pyth.jpg?fit=860%2C480&ssl=1"
+    },
+    {
+      "id": 1003,
+      "course": "JavaScript Front-End Frameworks",
+      "description": "Master popular JavaScript frameworks like React, Angular, and Vue.js. Build dynamic, responsive web applications with ease.",
+      "creditHours": 4,
+      "price": 449,
+      "banner": "https://gkmit.s3.amazonaws.com/blog/articles/How%20to%20Choose%20the%20Best%20Front-end%20Framework%20Feature%20image.png"
+    },
+    {
+      "id": 1004,
+      "course": "Data Science with Python",
+      "description": "Explore data analysis, visualization, and machine learning using Python. Solve real-world problems with data-driven insights.",
+      "creditHours": 5,
+      "price": 399,
+      "banner": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXKVCIS2_-eqsZrtaCVW6PP_19Qm5JCkkj-_T5mKuO1zvvbZYhDEb4RYuJyoSKrozvPlc&usqp=CAU"
+    },
+    {
+      "id": 1005,
+      "course": "Full-Stack Web Development",
+      "description": "Become a full-stack developer. Learn back-end technologies like Node.js and front-end technologies like React. Build complete web applications.",
+      "creditHours": 4,
+      "price": 599,
+      "banner": "https://media.licdn.com/dms/image/C4E12AQFUVsDT1ASH7w/article-cover_image-shrink_600_2000/0/1646110827062?e=2147483647&v=beta&t=YbZ3S2EANxTSBsQzwglljER0N1LEAIawdNkaXTSDeWI"
+    },
+    {
+      "id": 1006,
+      "course": "Mobile App Development with Flutter",
+      "description": "Create cross-platform mobile apps with Flutter. Develop beautiful and responsive apps for both iOS and Android.",
+      "creditHours": 3,
+      "price": 449,
+      "banner": "https://www.biztechcs.com/wp-content/uploads/2021/04/Why-Flutter-is-Better-for-App-Development-jpg-webp.webp"
+    },
+    {
+      "id": 1007,
+      "course": "Java Programming for Beginners",
+      "description": "Start your journey in Java programming. Cover the fundamentals and basic concepts. Suitable for beginners and those new to Java.",
+      "creditHours": 4,
+      "price": 349,
+      "banner": "https://www.webtekno.com/images/editor/default/0003/47/9081c992ca8b6f9fd55a9f36c6f5fae08ed5f57f.jpeg"
+    },
+    {
+      "id": 1008,
+      "course": "Advanced Machine Learning",
+      "description": "Dive deep into advanced machine learning techniques, including neural networks, deep learning, and natural language processing.",
+      "creditHours": 5,
+      "price": 549,
+      "banner": "https://media.istockphoto.com/id/1273072739/vector/machine-learning-banner-logo-for-technology-ai-big-data-algorithm-neural-network-deep.jpg?s=170667a&w=0&k=20&c=Ts1g-ZmfulPB5yyd-MjhbGnp8O1OlktclyFFZRiZKjg="
+    },
+    {
+      "id": 1009,
+      "course": "Cybersecurity Essentials",
+      "description": "Learn the essentials of cybersecurity, including network security, ethical hacking, and protecting digital assets from threats.",
+      "creditHours": 4,
+      "price": 399,
+      "banner": "https://www.springboard.com/blog/wp-content/uploads/2022/02/is-cybersecurity-hard-scaled.jpg"
+    },
+    {
+      "id": 1010,
+      "course": "DevOps and Continuous Integration",
+      "description": "Master DevOps practices and implement continuous integration and continuous delivery pipelines for efficient software development.",
+      "creditHours": 2,
+      "price": 449,
+      "banner": "https://cdn.educba.com/academy/wp-content/uploads/2019/12/Continuous-Integration-in-DevOps.jpg"
+    },
+    {
+      "id": 1011,
+      "course": "Game Development with Unity",
+      "description": "Create interactive games using the Unity game engine. Learn game design, physics, and scripting for 2D and 3D games.",
+      "creditHours": 5,
+      "price": 499,
+      "banner": "https://moonmana.com/wp-content/uploads/2022/07/Unity_Game_Development.png"
+    },
+    {
+      "id": 1012,
+      "course": "Cloud Computing with AWS",
+      "description": "Explore cloud computing with Amazon Web Services (AWS). Deploy and manage scalable applications in the cloud.",
+      "creditHours": 4,
+      "price": 499,
+      "banner": "https://media.licdn.com/dms/image/D4D12AQEbRgMl6LCbiw/article-cover_image-shrink_720_1280/0/1681795044585?e=2147483647&v=beta&t=T_07sJZMPoifmRxmcyyL48wLQAVUdNByOJr7tp3EqJE"
+    }
+  ]
+  
