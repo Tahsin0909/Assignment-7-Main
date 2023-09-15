@@ -1,0 +1,27 @@
+#banner-img{
+    width: 384px;
+    height: 200px;
+}
+.icon{
+    width: 20px;
+    height: 23px;
+}
+.price-credit, .credit-container, .price-container{
+    display: flex;
+    gap: 10px;
+    font-size: large;
+}
+.price-credit{
+    gap: 10px;
+    margin-top: 10px;
+}
+.select-btn{
+
+    margin-top: 10px;
+}
+.toSelect{
+    width:100%;
+}
+.width-overwrite{
+    width: 380px;
+}

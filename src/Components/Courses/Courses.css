@@ -1,0 +1,6 @@
+.courses-container{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 390px);
+    gap: 5px;
+}
