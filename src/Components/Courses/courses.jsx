@@ -44,6 +44,18 @@ const Courses = () => {
                 count = count + item.creditHours
             )
             setCreditHours(count)
+            if(creditHours > 17){
+                toast.warn('Credit hours exceed 20.', {
+                    position: "top-right",
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "light",
+                    });
+            }
 
             selectCourse.forEach((item2)=>
                 count2 = count2 + item2.price
@@ -51,6 +63,18 @@ const Courses = () => {
             setPrice(count2)
 
             const creditRemaining = 20 - count;
+            if(creditRemaining < 0){
+                toast.warn('Not Enough Credit', {
+                    position: "top-right",
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "light",
+                    });
+            }
             setCreditRemaining(creditRemaining)
             
         }
@@ -61,11 +85,11 @@ const Courses = () => {
         <div className='course-body'>
             <div className='courses-container'>
                 {
-                    courses.map((data) => <Course key={data.id} handleClick={handleClick} courseData={data} creditHours={creditHours} price={price} creditRemaining={creditRemaining}></Course>)
+                    courses.map((data) => <Course key={data.id} handleClick={handleClick} courseData={data}></Course>)
                 }
             </div>
             <div>
-                <Cart selectCourse={selectCourse}></Cart>
+                <Cart setPrice={setPrice} creditHours={creditHours} price={price} creditRemaining={creditRemaining} selectCourse={selectCourse}></Cart>
             </div>
             <ToastContainer
                 position="top-right"

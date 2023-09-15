@@ -1,8 +1,9 @@
 /* eslint-disable react/prop-types */
 
+import 'react-toastify/dist/ReactToastify.css';
 import './Cart.css'
-const Cart = ({ selectCourse, creditHours, price, creditRemaining }) => {
-    console.log(selectCourse)
+const Cart = ({ selectCourse, creditHours, price, creditRemaining}) => {
+    // console.log(selectCourse)
     return (
         <div className='cart-container'>
             <div className='flex justify-between'>
@@ -15,7 +16,7 @@ const Cart = ({ selectCourse, creditHours, price, creditRemaining }) => {
                 </div>
             </div>
             <div>
-                <p>Credit Remaining: {creditRemaining }</p>
+                <p>Credit Remaining:{(creditRemaining <0)? creditRemaining = 0 :creditRemaining }</p>
             </div>
             <div className='item-container'>
                 {
@@ -31,12 +32,13 @@ const Cart = ({ selectCourse, creditHours, price, creditRemaining }) => {
                 }
             </div>
             <div>
-                <p>Total Credit: {creditHours} hr </p>
+                <p>Total Credit:{creditHours}{(creditHours == 0)? " ":"hr"} </p>
             </div>
             <div>
-                <p>Total Price: {price}</p>
+                <p>Total Price:{price}</p>
             </div>
         </div>
+        
     );
 };
 
