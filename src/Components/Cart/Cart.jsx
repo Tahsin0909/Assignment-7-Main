@@ -16,7 +16,7 @@ const Cart = ({ selectCourse, creditHours, price, creditRemaining}) => {
                 </div>
             </div>
             <div>
-                <p>Credit Remaining:{(creditRemaining <0)? creditRemaining = 0 :creditRemaining }</p>
+                <p className='font-bold shared-style'>Total Credit Hour Remaining: {creditRemaining}</p>
             </div>
             <div className='item-container'>
                 {
@@ -31,11 +31,11 @@ const Cart = ({ selectCourse, creditHours, price, creditRemaining}) => {
                     )
                 }
             </div>
-            <div>
-                <p>Total Credit:{creditHours}{(creditHours == 0)? " ":"hr"} </p>
+            <div className='shared-style2'>
+                <p>Total Credit Hour: {creditHours}{(creditHours == 0)? " ":"hr"} </p>
             </div>
-            <div>
-                <p>Total Price:{price}</p>
+            <div className='shared-style2'>
+                <p>Total Price: {price}{(price == 0)? " ":"$"}</p>
             </div>
         </div>
         

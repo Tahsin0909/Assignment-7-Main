@@ -11,7 +11,7 @@ const Courses = () => {
 
     const [creditHours, setCreditHours] = useState([]);
     const [price, setPrice] = useState([]);
-    const [creditRemaining, setCreditRemaining] = useState([]);
+    const [creditRemaining, setCreditRemaining] = useState([20]);
 
 
     useEffect(() => {
@@ -62,8 +62,9 @@ const Courses = () => {
             )
             setPrice(count2)
 
-            const creditRemaining = 20 - count;
+            let creditRemaining = 20 - count;
             if(creditRemaining < 0){
+                creditRemaining = 0;
                 toast.warn('Not Enough Credit', {
                     position: "top-right",
                     autoClose: 2000,

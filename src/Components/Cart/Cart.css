@@ -26,3 +26,12 @@
     width: 30px;
     height: 30px;
 }
+.shared-style{
+    color: blueviolet;
+    font-size: large;
+    margin-top: 10px;
+}
+.shared-style2{
+    color: blueviolet;
+    margin-top: 5px;
+}
