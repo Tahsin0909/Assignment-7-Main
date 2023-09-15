@@ -1,0 +1,10 @@
+#item-img{
+    width: 80px;
+
+}
+.item-container{
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+    border-bottom: 1px solid rgba(124, 124, 124, 0.467);
+}

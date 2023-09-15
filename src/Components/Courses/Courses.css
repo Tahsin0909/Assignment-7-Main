@@ -4,3 +4,7 @@
     grid-template-columns: repeat(3, 390px);
     gap: 5px;
 }
+.course-body{
+    display: flex;
+    gap:    10px;
+}

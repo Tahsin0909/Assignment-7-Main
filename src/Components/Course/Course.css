@@ -6,13 +6,14 @@
     width: 20px;
     height: 23px;
 }
-.price-credit, .credit-container, .price-container{
+.credit-container, .price-container{
     display: flex;
-    gap: 10px;
     font-size: large;
+    gap: 10px;
 }
 .price-credit{
-    gap: 10px;
+    display: flex;
+    gap: 30px;
     margin-top: 10px;
 }
 .select-btn{
