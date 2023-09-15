@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import'./Course.css'
 const Course = ({ courseData }) => {
     console.log(courseData)
@@ -11,11 +12,11 @@ const Course = ({ courseData }) => {
                     <p>{description}</p>
                     <div className='price-credit'>
                     <div className='price-container'>
-                        <img className='icon' src="../../../src/icon/dollar.png" alt="price" />
+                        <img className='icon' src="https://i.ibb.co/PjJyh8Q/dollar.png" alt="price" />
                         <p>Price : {price}</p>
                     </div>
                     <div className='credit-container'>
-                        <img className='icon' src="../../../src/icon/open-book.png" alt="credit" />
+                        <img className='icon' src="https://i.ibb.co/rkD2WWK/open-book.png" alt="credit" />
                         <p>Credit : {creditHours} hr</p>
                     </div>
                     </div>
