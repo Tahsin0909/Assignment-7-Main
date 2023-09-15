@@ -8,6 +8,12 @@ import 'react-toastify/dist/ReactToastify.css';
 const Courses = () => {
     const [courses, setCourses] = useState([]);
     const [selectCourse, setSelectCourse] = useState([]);
+
+    const [creditHours, setCreditHours] = useState([]);
+    const [price, setPrice] = useState([]);
+    const [creditRemaining, setCreditRemaining] = useState([]);
+
+
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
@@ -15,9 +21,11 @@ const Courses = () => {
     }, [])
     // console.log(Courses)
     const handleClick = (pera) => {
-        const isExsist = selectCourse.find(data => data.id == pera.id)
+        const isExists = selectCourse.find(data => data.id == pera.id)
         // if the course already select
-        if (isExsist) {
+        let count = pera.creditHours
+        let count2 = pera.price
+        if (isExists) {
             // toast
             toast.warn('Course already selected!', {
                 position: "top-right",
@@ -32,15 +40,28 @@ const Courses = () => {
         }
         else {
             setSelectCourse([...selectCourse, pera])
-        }
+            selectCourse.forEach((item)=>
+                count = count + item.creditHours
+            )
+            setCreditHours(count)
 
+            selectCourse.forEach((item2)=>
+                count2 = count2 + item2.price
+            )
+            setPrice(count2)
+
+            const creditRemaining = 20 - count;
+            setCreditRemaining(creditRemaining)
+            
+        }
+        // if the course already select
     }
     // console.log(selectCourse)
     return (
         <div className='course-body'>
             <div className='courses-container'>
                 {
-                    courses.map((data) => <Course key={data.id} handleClick={handleClick} courseData={data}></Course>)
+                    courses.map((data) => <Course key={data.id} handleClick={handleClick} courseData={data} creditHours={creditHours} price={price} creditRemaining={creditRemaining}></Course>)
                 }
             </div>
             <div>

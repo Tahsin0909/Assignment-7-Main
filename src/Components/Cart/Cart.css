@@ -2,9 +2,27 @@
     width: 80px;
 
 }
-.item-container{
+.item{
     display: flex;
     gap: 5px;
     margin-top: 5px;
-    border-bottom: 1px solid rgba(124, 124, 124, 0.467);
+}
+.cart-container{
+    position: fixed;
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+    margin-top: 20px;
+    background-color: rgba(0, 55, 157, 0.111);
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.415);
+}
+.item-container{
+    height: 250px;
+    overflow-y: scroll;
+    margin-top: 10px;
+}
+#logo{
+    width: 30px;
+    height: 30px;
 }
